@@ -30,6 +30,14 @@ THere is a small drop off in AUC score for all the models, except for SVM. Howev
 ### Third Run
 I used a grid search to optimise the parameters. I used gridsearchCV for 3 of the models, but had to use randomised search for the SVM model, as it was taking way to long on my computer. At time of writing this readme, still do not have results.
 
+           Model  Train Time  Train Accuracy  Test Accuracy     AUC  \
+0     LogRegress       20.23          0.8981         0.8973  0.7770   
+1            KNN       84.31          0.9058         0.8939  0.7259   
+2  Decision Tree        2.40          0.9029         0.8978  0.7761   
+
+Using the grid search has unsurprisingly upped the AUC scores of all three models, but not yet near the score of 0.887 achieved by original data modellers. SVM is our final hope. I will set running tonight, and hope to have results by tomorrow morning.
+
+
 
 
 
